@@ -2,18 +2,18 @@ package school.lesson5;
 
 import java.util.ArrayList;
 
-public class Box<Fruit> {
+public class Box<T extends Fruit> {
 
-    private Fruit obj;
+    private T obj;
     private double boxWeight;
-    private ArrayList<Fruit> list = new ArrayList<Fruit>();
+    private ArrayList<T> list = new ArrayList<T>();
 
-    public void addToList(Fruit obj) {
+    public void addToList(T obj) {
         this.obj = obj;
         list.add(obj);
     }
 
-    public ArrayList<Fruit> getList() {
+    public ArrayList<T> getList() {
         return list;
     }
 
@@ -37,7 +37,7 @@ public class Box<Fruit> {
         return comp;
     }
 
-    public void moveFruits(Box<Fruit> box) {
+    public void moveFruits(Box<T> box) {
         for (int i = 0; i < this.list.size(); i++) {
             box.addToList(this.list.get(i));
         }
