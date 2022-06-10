@@ -22,7 +22,7 @@ public class Dog extends Animal {
         if (length > MAX_SWIM_LENGTH) {
             System.out.println("Dog can`t swim for a distance of " + length + " m");
         } else {
-            System.out.println("Dog ran " + length + " m");
+            System.out.println("Dog swam " + length + " m");
         }
     }
 

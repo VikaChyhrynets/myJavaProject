@@ -17,7 +17,7 @@ public class MainTask1 {
 
         System.out.println("Dogs count: " + dog1.getCountDog());
         System.out.println("Cats count: " + cat1.getCountCat());
-        System.out.println("Animals count: " + cat1.getCountAnimals());
+        System.out.println("Animals count: " + dog1.getCountAnimals());
 
     }
 }
